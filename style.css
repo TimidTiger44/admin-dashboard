@@ -22,10 +22,17 @@ body {
     color: white;
 }
 
+.sidebar .symbol {
+    height: 1.25rem;
+    width: auto;
+}
+
 .sidebar img {
     height: 1.25rem;
     width: auto;
 }
+
+
 
 .header {
     grid-area: header;
