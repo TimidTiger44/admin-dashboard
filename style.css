@@ -7,7 +7,7 @@ body {
     height: 100%;
     display: grid;
     grid-template-columns: repeat(4, minmax(150px, 1fr));
-    grid-template-rows: 1fr 9fr;
+    grid-template-rows: auto 1fr;
     grid-template-areas: 
     "sidebar header header header"
     "sidebar main-content main-content main-content";
@@ -19,12 +19,26 @@ body {
     display: grid;
     grid-template-columns: 2em 1fr;
     row-gap: 0.5rem;
+    column-gap: .7rem;
     color: white;
+    font-family: "Roboto";
+    align-items: center;
+    justify-items: start;
 }
 
 .sidebar .symbol {
     height: 1.25rem;
     width: auto;
+    justify-self: center;
+}
+
+.sidebar .symbol.dashboard-symbol {
+    height: 2rem;
+}
+
+.dashboard {
+    font-size: 1.1rem;
+    font-weight: 600;
 }
 
 .sidebar img {
