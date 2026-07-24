@@ -18,6 +18,13 @@ body {
     grid-area: sidebar;
     display: grid;
     grid-template-columns: 2em 1fr;
+    row-gap: 0.5rem;
+    color: white;
+}
+
+.sidebar img {
+    height: 1.25rem;
+    width: auto;
 }
 
 .header {
