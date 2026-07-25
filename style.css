@@ -86,8 +86,8 @@ body {
 }
 
 .avatar {
-    height: 2rem;
-    width: 2rem;
+    height: 3rem;
+    width: 3rem;
     border-radius: 50%;
     object-fit: cover;
 }
