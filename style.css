@@ -114,9 +114,64 @@ body {
     font-family: "Roboto";
 }
 
-
-
 .main-content {
     background-color: rgb(200, 200, 200);
     grid-area: main-content;
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr;
+    grid-template-areas: 
+    "main-left main-left main-right";
+    gap: 2rem;
+}
+
+.main-section {
+
+}
+
+.main-left {
+    grid-area: main-left;
+}
+
+.main-right {
+    grid-area: main-right;
+}
+
+.main-header {
+
+}
+
+.section-header {
+
+}
+
+.card-container {
+
+}
+
+.card {
+
+}
+
+.card-title {
+
+}
+
+.card-text {
+
+}
+
+.card-symbols {
+
+}
+
+.subsection {
+
+}
+
+.subsection.announcments {
+
+}
+
+.subsection.trending {
+
 }
