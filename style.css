@@ -13,6 +13,23 @@ body {
     "sidebar main-content main-content main-content";
 }
 
+h2 {
+    font-family: "Roboto",sans-serif;
+    font-size: 1.2rem;
+}
+
+h3 {
+    font-size: 1rem;
+}
+
+h4 {
+    font-size: 0.9rem;
+}
+
+p {
+    font-size: 0.8rem;
+}
+
 .sidebar {
     background-color: rgb(51, 143, 255);
     grid-area: sidebar;
@@ -115,7 +132,7 @@ body {
 }
 
 .main-content {
-    background-color: rgb(200, 200, 200);
+    background-color: rgb(225, 225, 225);
     grid-area: main-content;
     display: grid;
     grid-template-columns: 2fr 2fr 1fr;
@@ -130,10 +147,18 @@ body {
 
 .main-left {
     grid-area: main-left;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    padding: 2rem;
+    gap: 1rem;
 }
 
 .main-right {
     grid-area: main-right;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    padding: 2rem;
+    gap: 2rem;
 }
 
 .main-header {
