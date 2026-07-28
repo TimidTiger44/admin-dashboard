@@ -6,7 +6,7 @@
 }
 
 body {
-    height: 100vh;
+    min-height: 100vh;
     display: grid;
     grid-template-columns: repeat(4, minmax(150px, 1fr));
     grid-template-rows: auto 1fr;
@@ -85,13 +85,18 @@ p {
     gap: 2rem;
 }
 
+
 .header-sub {
     display: flex;
-    justify-content: center;
-    flex-shrink: 0;
+    justify-content: flex-start;
     align-items: center;
     gap: 1.2rem;
 
+}
+
+.top-left{
+    flex:1;
+    justify-self: flex-start;
 }
 
 .header-greeting {
@@ -116,10 +121,8 @@ p {
     border-radius: 999px;
     background-color: rgb(200, 200, 200);
     color: black;
-    font-weight: 700;
     width: 100%;
-    flex: 1;
-    max-width: 20rem;
+    font-weight: 700;
     outline: none;
 }
 
