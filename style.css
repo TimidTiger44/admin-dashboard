@@ -73,7 +73,7 @@ p {
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    padding: 1.2rem 1.2rem;
+    padding: 1.2rem 3rem;
     font-family: "Roboto",sans-serif;
 }
 
@@ -216,13 +216,26 @@ p {
     font-size: 0.8rem;
 }
 
-.announcements {
- padding: 1rem;
+.announcements,
+.trending-users {
+ padding: 1.25rem;
  background-color: white;
+ display: grid;
+ grid-template-rows:repeat(3,1fr);
+ gap: 1rem;
+}
+
+.announcement {
+    border-bottom: 1px solid gray
+}
+
+.announcement:last-child{
+    border-bottom: none;
 }
 
 
-
-.subsection.trending {
-
+.trending-user {
+    display: flex;
+    gap: .5rem;
+    align-items: center;
 }
