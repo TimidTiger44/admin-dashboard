@@ -170,11 +170,19 @@ p {
 }
 
 .card-container {
-
-}
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    /* is there a better way?? */
+    grid-auto-rows: 180px;
+    gap: 2rem;
+}   
 
 .card {
-
+    background-color: white;
+    padding: 1.25rem;
+    border-left: 5px solid rgb(255, 174, 0);
+    display: grid;
+    grid-template-rows: auto auto 1fr;
 }
 
 .card-title {
@@ -182,11 +190,14 @@ p {
 }
 
 .card-text {
-
+    color: rgb(158, 158, 158)
 }
 
 .card-symbols {
-
+    display: flex;
+    align-self: self-end;
+    justify-self: end;
+    gap: 0.5rem;
 }
 
 .subsection {
