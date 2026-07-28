@@ -135,10 +135,9 @@ p {
     background-color: rgb(225, 225, 225);
     grid-area: main-content;
     display: grid;
-    grid-template-columns: 2fr 2fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: 
     "main-left main-left main-right";
-    gap: 2rem;
 }
 
 .main-section {
@@ -157,7 +156,9 @@ p {
     grid-area: main-right;
     display: grid;
     grid-template-rows: 1fr 1fr;
-    padding: 2rem;
+    padding-top: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
     gap: 2rem;
 }
 
@@ -201,12 +202,26 @@ p {
 }
 
 .subsection {
-
+    display: grid;
+    grid-template-rows: auto 1fr;
+    gap: 1rem; 
 }
 
-.subsection.announcments {
-
+.subsection p {
+    color: rgb(124, 124, 124);
+    font-size: 0.7rem;
 }
+
+.subsection h3 {
+    font-size: 0.8rem;
+}
+
+.announcements {
+ padding: 1rem;
+ background-color: white;
+}
+
+
 
 .subsection.trending {
 
